@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />    
+  </head>
+
+  <body>
+    <div id="divUnSupportedBrowserWarning" style="text-align: center; display:none">
+      <h4 style="color: red;"><strong>Warning!</strong> Browser is not supported. The web page may not display properly</div>
+    </div>
+    <div>Test page for showing unsupported browser warning</div>
+  
+  <script type=text/javascript>
+    // Set the SupportedBrowsersConfig locally
+    window.SupportedBrowsersConfig = {
+                "chrome": ">=81",
+                "firefox": ">=71",
+                "opera": ">=65"
+              };
+    </script>
+    <script src="bundle.js"></script>
+  </body>
+
+</html>
